@@ -1,0 +1,45 @@
+
+.wrapper, .display, .btns {
+    border: 1px solid #61dafb;
+    border-radius: 10px;
+}
+
+.wrapper {
+    display: block;
+    width: 200px;
+    padding: 5px;
+}
+
+.display {
+    background-color: #61dafb;
+    color: #282c34;
+    margin-bottom: 5px;
+    height: 70px;
+}
+
+.spanDefault {
+    font-size: 45px;
+    color: #282c34;
+    margin: auto 0;
+}
+
+.spanRed {
+    color: red;
+    font-size: 45px;
+    margin: auto 0;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+}
+
+.btn {
+    border-radius: 10px;
+    background-color: #61dafb;
+    color: #282c34;
+    outline: none;
+    padding: 3px;
+    user-select: none;
+}
