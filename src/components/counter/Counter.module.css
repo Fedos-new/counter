@@ -1,20 +1,24 @@
 
-.wrapper, .display, .btns {
+.wrapper, .display,.displaySet, .btns {
     border: 1px solid #61dafb;
     border-radius: 10px;
+    margin: 15px;
 }
 
 .wrapper {
     display: block;
-    width: 200px;
-    padding: 5px;
+    width: 270px;
 }
 
 .display {
     background-color: #61dafb;
     color: #282c34;
     margin-bottom: 5px;
-    height: 70px;
+}
+.displaySet {
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 15px;
 }
 
 .spanDefault {
@@ -32,14 +36,23 @@
 .btns {
     display: flex;
     justify-content: space-around;
-    padding: 5px 0;
+    padding: 15px 0;
 }
 
 .btn {
-    border-radius: 10px;
+    border-radius: 9px;
     background-color: #61dafb;
     color: #282c34;
     outline: none;
     padding: 3px;
     user-select: none;
+}
+
+.input {
+    border-radius: 9px;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    font-size: 25px;
+    outline: none;
 }

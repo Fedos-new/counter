@@ -1,11 +1,20 @@
 import React, {useState} from 'react';
-import './App.css';
+import '../../App.css';
 import s from './Counter.module.css'
+import Button from "../button/Button";
+
+
+export type ButtonsType = { // need to fix any  !done
+    value: string
+    onclick: ()=> void
+}
+
 
 function Counter() {
+    const value = 5
     const [count, setCount] = useState<number>(0)
     const inc = () => {
-        if (count < 5) {
+        if (count < value) {
             setCount(count + 1)
         }
     }
@@ -13,19 +22,15 @@ function Counter() {
         setCount(0)
     }
 
-    console.log(count)
-
     return (
         <div className={s.wrapper}>
             <div className={s.display}>
-                <span className={count < 5 ? s.spanDefault : s.spanRed}>{count}</span>
+                <span className={count < value ? s.spanDefault : s.spanRed}>{count}</span>
             </div>
             <div className={s.btns}>
-                <div className={s.btn} onClick={inc}>inc</div>
-                <div className={s.btn} onClick={reset}>reset</div>
+                <Button value={'inc'} onclick={inc}/>
+                <Button value={'reset'} onclick={reset}/>
             </div>
-
-
         </div>
     );
 }
