@@ -6,9 +6,9 @@ import {ButtonsType} from "../counter/Counter";
 function Button(props:ButtonsType) {
 
     return (
-        <div className={s.btn} onClick={props.onclick}>
+        <button className={s.btn} onClick={props.onclick}  disabled={props.disabled} >
             {props.value}
-        </div>
+        </button>
     );
 }
 

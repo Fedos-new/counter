@@ -1,5 +1,5 @@
 
-.wrapper, .display,.displaySet, .btns {
+.wrapper, .display, .displaySet, .btns {
     border: 1px solid #61dafb;
     border-radius: 10px;
     margin: 15px;
@@ -7,14 +7,16 @@
 
 .wrapper {
     display: block;
-    width: 270px;
+    width: 300px;
 }
 
 .display {
     background-color: #61dafb;
     color: #282c34;
     margin-bottom: 5px;
+    font-weight: bold;
 }
+
 .displaySet {
     background-color: #282c34;
     color: #61dafb;
@@ -28,7 +30,7 @@
 }
 
 .spanRed {
-    color: red;
+    color: crimson;
     font-size: 45px;
     margin: auto 0;
 }
@@ -44,15 +46,31 @@
     background-color: #61dafb;
     color: #282c34;
     outline: none;
-    padding: 3px;
     user-select: none;
+    font-weight: bold;
+    font-size: 30px;
 }
 
-.input {
+.btn:disabled {
+    border-radius: 9px;
+    background-color: #317182;
+    color: #282c34;
+    outline: none;
+    user-select: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.input, .inputError {
     border-radius: 9px;
     width: 50px;
     height: 30px;
     text-align: center;
     font-size: 25px;
     outline: none;
+}
+
+.inputError {
+    color: #282c34;
+    background-color: crimson;
 }
